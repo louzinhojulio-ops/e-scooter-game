@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Scooter Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hud">
+        <div class="brand">E-Scooter Rush</div>
+        <div class="stats">
+          <span>Score: <strong id="score">0</strong></span>
+          <span>Best: <strong id="best-score">0</strong></span>
+        </div>
+      </header>
+
+      <main class="game-panel">
+        <canvas id="gameCanvas" width="960" height="540" aria-label="E-scooter game area"></canvas>
+        <div id="overlay" class="overlay visible">
+          <h1>E-Scooter Rush</h1>
+          <p>Dodge obstacles, collect batteries, and keep riding.</p>
+          <ul>
+            <li>Move: A / D or ← / →</li>
+            <li>Jump: W, ↑, or Space</li>
+          </ul>
+          <button id="startBtn">Start Ride</button>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
